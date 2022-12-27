@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      #validation-input {
+        border: 3px solid #bdbdbd;
+        outline: none;
+      }
+
+      #validation-input.valid {
+        border-color: #4caf50;
+      }
+
+      #validation-input.invalid {
+        border-color: #f44336;
+      }
+    </style>
+  </head>
+  <body>
+
+    <ul id="ingredients"></ul>
+
+    <ul id="gallery"></ul>
+
+    <div id="counter">
+      <button type="button" class="decrement">-1</button>
+      <span id="value">0</span>
+      <button type="button" class="increment">+1</button>
+    </div>
+
+
+
+
+    <input type="text" placeholder="Ваше ім'я?" id="name-input" value=""/>
+    <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
+
+
+
+    <input
+      type="text"
+      id="validation-input"
+      data-length="6"
+      placeholder="Введи 6 символів"
+    />
+
+
+
+    <input id="font-size-control" type="range" />
+    <br />
+    <span id="text">Абракадабра!</span>
+
+
+
+    <div id="controls">
+      <input type="number" min="0" max="100" step="1" class="boxInput"/>
+      <button type="button" class="render">Створити</button>
+      <button type="button" class="destroy">Очистити</button>
+    </div>
+    
+    <div id="boxes"></div>
+
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
